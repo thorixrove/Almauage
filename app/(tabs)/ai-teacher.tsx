@@ -1,12 +1,18 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { posthog } from "../../lib/posthog"; 
+import { useEffect } from "react";
+import { View, Text } from "react-native";
+import { SafeAreaView } from "react-native-safe-area-context";
 
-const AITeacherScreen = () => {
+export default function AITeacherScreen() {
+  useEffect(() => {
+    posthog.capture("ai_teacher_viewed");
+  }, []);
+
   return (
-    <View>
-      <Text>AITeacherScreen</Text>
-    </View>
-  )
+    <SafeAreaView style={{ flex: 1, backgroundColor: "#fff" }}>
+      <View className="flex-1 items-center justify-center">
+        <Text className="h2">AI Teacher</Text>
+      </View>
+    </SafeAreaView>
+  );
 }
-
-export default AITeacherScreen

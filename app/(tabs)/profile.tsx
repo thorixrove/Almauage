@@ -1,9 +1,12 @@
-import React from 'react'
+import {View, Text} from "react-native"
+import { SafeAreaView } from "react-native-safe-area-context"
 
 export default function ProfileScreen() {
-  return (
-    <div>
-      ProfileScreen
-    </div>
+  return(
+    <SafeAreaView style={{ flex: 1, backgroundColor: "#fff"}}>
+      <View className="flex-1 items-center justify-center">
+        <Text className="h2">Profile</Text>
+      </View>
+    </SafeAreaView>
   )
 }

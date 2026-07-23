@@ -1,19 +1,19 @@
 export default {
   expo: {
-    name: "duolingo-clone",
-    slug: "duolingo-clone",
+    name: "Almanguage",
+    slug: "Almanguage",
     version: "1.0.0",
     orientation: "portrait",
     icon: "./assets/images/icon.png",
-    scheme: "duolingoclone",
+    scheme: "Almanguage",
     userInterfaceStyle: "automatic",
     newArchEnabled: true,
     ios: {
       supportsTablet: true,
-      bundleIdentifier: "com.jsmastery.duolingo-clone",
+      bundleIdentifier: "com.jsmastery.Almanguage",
     },
     android: {
-      package: "com.jsmastery.duolingoclone",
+      package: "com.jsmastery.Almanguage",
       adaptiveIcon: {
         backgroundColor: "#E6F4FE",
         foregroundImage: "./assets/images/android-icon-foreground.png",
@@ -43,6 +43,8 @@ export default {
       ],
       "@clerk/expo",
       "expo-secure-store",
+      "expo-web-browser",
+      "@stream-io/video-react-native-sdk",
       [
         "@config-plugins/react-native-webrtc",
         {
