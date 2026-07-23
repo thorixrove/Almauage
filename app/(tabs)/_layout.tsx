@@ -1,12 +1,18 @@
-import { View, Text } from 'react-native'
+import { Tabs } from "expo-router"
+import { TabBar } from "../../components/TabBar"
 import React from 'react'
 
-const TabsLayout = () => {
+export default function TabsLayout() {
   return (
-    <View>
-      <Text>TabsLayout</Text>
-    </View>
+      <Tabs
+      tabBar={(props) => <TabBar {...props} />}
+      screenOptions={{ headerShown: false }}
+    >
+      <Tabs.Screen name="index" />
+      <Tabs.Screen name="learn" />
+      <Tabs.Screen name="ai-teacher" />
+      <Tabs.Screen name="chat" />
+      <Tabs.Screen name="profile" />
+    </Tabs>
   )
 }
-
-export default TabsLayout

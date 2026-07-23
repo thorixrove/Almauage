@@ -1,5 +1,5 @@
 {
-  "name": "almauage",
+  "name": "almanguage",
   "main": "expo-router/entry",
   "version": "1.0.0",
   "dependencies": {
@@ -12,6 +12,7 @@
     "@react-navigation/elements": "^2.9.35",
     "@react-navigation/native": "^7.1.8",
     "@tailwindcss/postcss": "^4.3.3",
+    "babel-preset-expo": "~54.0.10",
     "eslint": "^10.7.0",
     "eslint-config-expo": "~10.0.0",
     "expo": "~54.0.33",
